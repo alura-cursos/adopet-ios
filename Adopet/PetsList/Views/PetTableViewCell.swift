@@ -14,7 +14,7 @@ class PetTableViewCell: UITableViewCell {
     @IBOutlet weak var dogDescription: UILabel!
     @IBOutlet weak var location: UILabel!
     
-    private var dataManager = DataManager()
+    private var imageDownloader = ImageDownloader()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +28,7 @@ class PetTableViewCell: UITableViewCell {
     }
     
     func set(pet: Pet) {
-        dataManager.downloadPetImage(from: pet.imageUrl) { image in
+        imageDownloader.downloadImage(from: pet.imageUrl) { image in
             DispatchQueue.main.async {
                 if let image {
                     self.dogImg.image = image

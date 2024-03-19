@@ -10,7 +10,7 @@ import UIKit
 class PetDetailsViewController: UIViewController {
     
     private var pet: Pet
-    private var dataManager = DataManager()
+    private var imageDownloader = ImageDownloader()
     
     private lazy var decorativeShapeImageView: UIImageView = {
         let imgView = UIImageView(image: UIImage(named: "shape-1"))
@@ -100,7 +100,7 @@ class PetDetailsViewController: UIViewController {
         view.addSubview(decorativeShapeImageView)
         view.addSubview(stackView)
         
-        dataManager.downloadPetImage(from: pet.imageUrl) { image in
+        imageDownloader.downloadImage(from: pet.imageUrl) { image in
             DispatchQueue.main.async {
                 guard let image else { return }
                 self.petImageView.image = image

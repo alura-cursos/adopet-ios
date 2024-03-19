@@ -9,8 +9,8 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    private let db = DataManager()
-    
+    private var userManager = UserManager()
+
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -155,7 +155,7 @@ class SignUpViewController: UIViewController {
         
         let userData = CreateUserAccountModel(name: name, email: email, phoneNumber: phoneNumber, password: password)
         
-        db.saveUser(userData: userData)
+        userManager.saveUser(userData: userData)
         
         navigationController?.pushViewController(SignInViewController(), animated: true)
     }
