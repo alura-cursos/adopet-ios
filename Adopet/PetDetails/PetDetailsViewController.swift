@@ -101,9 +101,9 @@ class PetDetailsViewController: UIViewController {
         view.addSubview(decorativeShapeImageView)
         view.addSubview(stackView)
         
-        imageDownloader.downloadImage(from: pet.imageUrl) { image in
+        imageDownloader.downloadImageData(from: pet.imageUrl) { data in
             DispatchQueue.main.async {
-                guard let image else { return }
+                guard let data = data, let image = UIImage(data: data) else { return }
                 self.petImageView.image = image
             }
         }
