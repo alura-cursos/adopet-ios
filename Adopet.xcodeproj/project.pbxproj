@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		48941E3C2B83E75E00C2CF86 /* PetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48941E3B2B83E75E00C2CF86 /* PetDetailsViewController.swift */; };
 		48941E422B85275600C2CF86 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48941E412B85275600C2CF86 /* TableHeaderView.swift */; };
+		48967AA12BA9DEAC0055F6F8 /* CreateUserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AA02BA9DEAC0055F6F8 /* CreateUserAccountModel.swift */; };
 		48A900D02B79786F0057616A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900CF2B79786F0057616A /* AppDelegate.swift */; };
 		48A900D22B79786F0057616A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900D12B79786F0057616A /* SceneDelegate.swift */; };
 		48A900D42B79786F0057616A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900D32B79786F0057616A /* HomeViewController.swift */; };
@@ -66,6 +67,7 @@
 /* Begin PBXFileReference section */
 		48941E3B2B83E75E00C2CF86 /* PetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsViewController.swift; sourceTree = "<group>"; };
 		48941E412B85275600C2CF86 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		48967AA02BA9DEAC0055F6F8 /* CreateUserAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserAccountModel.swift; sourceTree = "<group>"; };
 		48A900CC2B79786F0057616A /* Adopet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adopet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A900CF2B79786F0057616A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A900D12B79786F0057616A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				48C9B3672B7C204500F16F61 /* Pet.swift */,
+				48967AA02BA9DEAC0055F6F8 /* CreateUserAccountModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				48A900D42B79786F0057616A /* HomeViewController.swift in Sources */,
 				48EDD0E92B7D6E9A00CB6228 /* UITextField+.swift in Sources */,
 				48C9B3732B7D097C00F16F61 /* PetTableViewCell.swift in Sources */,
+				48967AA12BA9DEAC0055F6F8 /* CreateUserAccountModel.swift in Sources */,
 				48C9B3762B7D3C4400F16F61 /* DataManager.swift in Sources */,
 				48A900D02B79786F0057616A /* AppDelegate.swift in Sources */,
 				48941E3C2B83E75E00C2CF86 /* PetDetailsViewController.swift in Sources */,

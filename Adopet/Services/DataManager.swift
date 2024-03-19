@@ -38,10 +38,7 @@ class DataManager {
         }.resume()
     }
     
-    func saveUser(name: String,
-                    email: String,
-                    phoneNumber: String,
-                    password: String) {
+    func saveUser(userData: CreateUserAccountModel) {
         // Salvar usuário no banco de dados
     }
     
