@@ -38,7 +38,7 @@ class SignUpViewController: UIViewController {
     private lazy var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Ainda não tem cadastro? Então, antes de buscar seu melhor amigo, precisamos de alguns dados:"
+        label.text = Constants.doesntHaveAnAccount
         label.font = .init(name: "Poppins", size: 16)
         label.numberOfLines = 0
         label.textColor = UIColor(named: "ColorBlue")
@@ -47,7 +47,7 @@ class SignUpViewController: UIViewController {
     }()
     
     private lazy var nameInputField: APLabeledTextField = {
-        return APLabeledTextField(title: "Nome", placeholder: "Digite seu nome completo")
+        return APLabeledTextField(title: Constants.nameLabelTitle, placeholder: Constants.nameTextFieldPlaceholder)
     }()
     
     private lazy var emailInputField: APLabeledTextField = {
@@ -72,7 +72,7 @@ class SignUpViewController: UIViewController {
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.alignment = .fill
         stack.distribution = .equalSpacing
-        stack.spacing = 16
+        stack.spacing = Constants.UIConstants.stackSpacing
         stack.axis = .vertical
         return stack
     }()
