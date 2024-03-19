@@ -18,6 +18,7 @@
 		48967AAF2BA9E5E00055F6F8 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AAE2BA9E5E00055F6F8 /* ImageDownloader.swift */; };
 		48967AB12BA9E6F70055F6F8 /* ExternalLinksHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AB02BA9E6F70055F6F8 /* ExternalLinksHandler.swift */; };
 		48967AB32BA9E79F0055F6F8 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AB22BA9E79F0055F6F8 /* URLHandler.swift */; };
+		48967AB52BA9E9A30055F6F8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AB42BA9E9A30055F6F8 /* NetworkingService.swift */; };
 		48A900D02B79786F0057616A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900CF2B79786F0057616A /* AppDelegate.swift */; };
 		48A900D22B79786F0057616A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900D12B79786F0057616A /* SceneDelegate.swift */; };
 		48A900D42B79786F0057616A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900D32B79786F0057616A /* HomeViewController.swift */; };
@@ -83,6 +84,7 @@
 		48967AAE2BA9E5E00055F6F8 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		48967AB02BA9E6F70055F6F8 /* ExternalLinksHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLinksHandler.swift; sourceTree = "<group>"; };
 		48967AB22BA9E79F0055F6F8 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
+		48967AB42BA9E9A30055F6F8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		48A900CC2B79786F0057616A /* Adopet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adopet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A900CF2B79786F0057616A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A900D12B79786F0057616A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				48967AAE2BA9E5E00055F6F8 /* ImageDownloader.swift */,
 				48967AB02BA9E6F70055F6F8 /* ExternalLinksHandler.swift */,
 				48967AB22BA9E79F0055F6F8 /* URLHandler.swift */,
+				48967AB42BA9E9A30055F6F8 /* NetworkingService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				48967AA92BA9E5920055F6F8 /* UserManager.swift in Sources */,
 				48967AAF2BA9E5E00055F6F8 /* ImageDownloader.swift in Sources */,
 				48EDD0E92B7D6E9A00CB6228 /* UITextField+.swift in Sources */,
+				48967AB52BA9E9A30055F6F8 /* NetworkingService.swift in Sources */,
 				48C9B3732B7D097C00F16F61 /* PetTableViewCell.swift in Sources */,
 				48967AA12BA9DEAC0055F6F8 /* CreateUserAccountModel.swift in Sources */,
 				48967AAB2BA9E59B0055F6F8 /* AuthenticationManager.swift in Sources */,

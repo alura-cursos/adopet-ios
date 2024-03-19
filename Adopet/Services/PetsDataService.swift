@@ -7,13 +7,6 @@
 
 import Foundation
 
-enum NetworkingError: Error {
-    case networkError(Error)
-    case dataUnavailable
-    case decodingError(Error)
-    case urlUnavailable
-}
-
 class PetsDataService {
     func request(url: URL, completion: @escaping (Result<[Pet], NetworkingError>) -> Void) {
         URLSession.shared.dataTask(with: url) { (responseData, _, error) in
