@@ -16,6 +16,7 @@
 		48967AAB2BA9E59B0055F6F8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AAA2BA9E59B0055F6F8 /* AuthenticationManager.swift */; };
 		48967AAD2BA9E5A20055F6F8 /* PetsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AAC2BA9E5A20055F6F8 /* PetsDataService.swift */; };
 		48967AAF2BA9E5E00055F6F8 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AAE2BA9E5E00055F6F8 /* ImageDownloader.swift */; };
+		48967AB12BA9E6F70055F6F8 /* ExternalLinksHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967AB02BA9E6F70055F6F8 /* ExternalLinksHandler.swift */; };
 		48A900D02B79786F0057616A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900CF2B79786F0057616A /* AppDelegate.swift */; };
 		48A900D22B79786F0057616A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900D12B79786F0057616A /* SceneDelegate.swift */; };
 		48A900D42B79786F0057616A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A900D32B79786F0057616A /* HomeViewController.swift */; };
@@ -79,6 +80,7 @@
 		48967AAA2BA9E59B0055F6F8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		48967AAC2BA9E5A20055F6F8 /* PetsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsDataService.swift; sourceTree = "<group>"; };
 		48967AAE2BA9E5E00055F6F8 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		48967AB02BA9E6F70055F6F8 /* ExternalLinksHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLinksHandler.swift; sourceTree = "<group>"; };
 		48A900CC2B79786F0057616A /* Adopet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adopet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A900CF2B79786F0057616A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A900D12B79786F0057616A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				48967AAA2BA9E59B0055F6F8 /* AuthenticationManager.swift */,
 				48967AAC2BA9E5A20055F6F8 /* PetsDataService.swift */,
 				48967AAE2BA9E5E00055F6F8 /* ImageDownloader.swift */,
+				48967AB02BA9E6F70055F6F8 /* ExternalLinksHandler.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48967AB12BA9E6F70055F6F8 /* ExternalLinksHandler.swift in Sources */,
 				48967AA42BA9DFAB0055F6F8 /* APLabeledTextField.swift in Sources */,
 				48941E422B85275600C2CF86 /* TableHeaderView.swift in Sources */,
 				48C9B3682B7C204500F16F61 /* Pet.swift in Sources */,

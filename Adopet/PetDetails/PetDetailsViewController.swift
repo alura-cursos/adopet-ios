@@ -11,6 +11,7 @@ class PetDetailsViewController: UIViewController {
     
     private var pet: Pet
     private var imageDownloader = ImageDownloader()
+    private var externalLinksHandler = ExternalLinksHandler()
     
     private lazy var decorativeShapeImageView: UIImageView = {
         let imgView = UIImageView(image: UIImage(named: "shape-1"))
@@ -134,23 +135,10 @@ class PetDetailsViewController: UIViewController {
     }
     
     @objc func didTapPhoneCallButton() {
-        guard let phoneURL = URL(string: "tel://\(pet.phoneNumber)") else { return }
-        UIApplication.shared.open(phoneURL, options: [:], completionHandler: nil)
+        externalLinksHandler.openTelephoneUrl(phoneNumber: pet.phoneNumber)
     }
     
     @objc func didTapSendWhatsappMessageButton() {
-        
-        guard let whatsappURL = URL(string: "whatsapp://send?phone=\(pet.phoneNumber)&text=Olá! Tenho interesse no pet \(pet.name)") else { return }
-        
-        if UIApplication.shared.canOpenURL(whatsappURL) {
-            UIApplication.shared.open(whatsappURL, options: [:], completionHandler: nil)
-        } else {
-            openWhatsappInAppStore()
-        }
-    }
-    
-    func openWhatsappInAppStore() {
-        guard let appStoreURL = URL(string: "https://apps.apple.com/app/whatsapp-messenger/id310633997") else { return }
-        UIApplication.shared.open(appStoreURL, options: [:], completionHandler: nil)
+        externalLinksHandler.openWhatsappUrl(phoneNumber: pet.phoneNumber, message: "Olá! Tenho interesse no pet \(pet.name)")
     }
 }
